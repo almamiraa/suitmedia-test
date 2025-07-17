@@ -1,8 +1,8 @@
 # Suitmedia Testcase 2025 - Mobile App Developer
 
-| Nama | NRP        | University |
-| ---- | ---------- | ---------- |
-| Alma | 5027221054 | ITS        |
+| Nama              | NRP        | University |
+| ----------------- | ---------- | ---------- |
+| Alma Amira Dewani | 5027221054 | ITS        |
 
 A simple Flutter application that demonstrates:
 
@@ -41,7 +41,9 @@ A simple Flutter application that demonstrates:
 
 ### Home Screen 📱
 
-![Home screen](/assets/readme/home.jpg)
+ <p align="center">
+  <img src="/assets/readme/home.jpg" alt="home" width="30%" style="margin: 10px;" />
+</p>
 
 ### Palindrome Checker ☑️
 
@@ -59,10 +61,19 @@ A simple Flutter application that demonstrates:
   <img src="/assets/readme/warn2.jpg" alt="Warning2" width="30%" />
 </p>
 
+<p align="center">
+  <img src="/assets/readme/input-name.jpg" alt="Input name width="23%" style="margin:5px;" />
+  <img src="/assets/readme/second1.jpg" alt="Cek name" width="23%" style="margin:5px;" />
+  <img src="/assets/readme/second2.jpg" alt="result" width="23%" style="margin:5px;" />
+  <img src="/assets/readme/warn2.jpg" alt="Warning2" width="23%" style="margin:5px;" />
+</p>
+
 ### User List 👥
 
-![third screen](/assets/readme/third.jpg)
-![no users](/assets/readme/no-users.jpg)
+<p align="center">
+  <img src="/assets/readme/third.jpg" alt="third screen" width="45%" style="margin-right:10px;" />
+  <img src="/assets/readme/no-users.jpg" alt="no users" width="45%" />
+</p>
 
 ---
 
