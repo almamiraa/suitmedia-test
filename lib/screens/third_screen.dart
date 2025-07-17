@@ -88,9 +88,13 @@ class _ThirdScreenState extends State<ThirdScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Select a user'),
+        title: const Text(
+          'Third Screen',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
         backgroundColor: const Color(0xFF2B637B),
         foregroundColor: Colors.white,
+        centerTitle: true,
       ),
       body: RefreshIndicator(
         onRefresh: _refresh,
@@ -102,9 +106,18 @@ class _ThirdScreenState extends State<ThirdScreen> {
                 itemBuilder: (context, index) {
                   if (index < users.length) {
                     final user = users[index];
-                    return UserTile(
-                      user: user,
-                      onTap: () => _selectUser(context, user),
+                    return Column(
+                      children: [
+                        UserTile(
+                          user: user,
+                          onTap: () => _selectUser(context, user),
+                        ),
+                        Divider(
+                          height: 1,
+                          thickness: 1.2,
+                          color: Colors.grey[300],
+                        ),
+                      ],
                     );
                   } else {
                     return const Padding(

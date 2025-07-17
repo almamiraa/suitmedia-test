@@ -11,48 +11,48 @@ class SecondScreen extends StatelessWidget {
     final userProvider = Provider.of<UserProvider>(context);
 
     return Scaffold(
-      backgroundColor: const Color(0xFFF5F5F5),
       appBar: AppBar(
+        backgroundColor: const Color(0xFF2B637B),
+        foregroundColor: Colors.white,
+        elevation: 0,
+        centerTitle: true,
         title: const Text(
           'Second Screen',
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
         ),
-        centerTitle: true,
-        backgroundColor: Color(0xFF2B637B),
-        foregroundColor: Colors.white,
       ),
       body: Padding(
-        padding: const EdgeInsets.all(24.0),
+        padding: const EdgeInsets.symmetric(horizontal: 24.0, vertical: 16),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const Text(
               'Welcome',
-              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
+              style: TextStyle(fontSize: 16, color: Colors.black),
             ),
-            const SizedBox(height: 24),
+            const SizedBox(height: 4),
+            Text(
+              userProvider.name.isNotEmpty ? userProvider.name : 'User name',
+              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(
+              height: 80,
+            ), // Space between welcome and selected user
 
-            Text(
-              'Your Name:',
-              style: TextStyle(fontSize: 18, color: Colors.grey[700]),
+            Center(
+              child: Text(
+                userProvider.selectedUser.isNotEmpty
+                    ? userProvider.selectedUser
+                    : 'Selected User Name',
+                textAlign: TextAlign.center,
+                style: const TextStyle(
+                  fontSize: 22,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
             ),
-            Text(
-              userProvider.name,
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 24),
 
-            Text(
-              'Selected User:',
-              style: TextStyle(fontSize: 18, color: Colors.grey[700]),
-            ),
-            Text(
-              userProvider.selectedUser.isNotEmpty
-                  ? userProvider.selectedUser
-                  : 'No user selected',
-              style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 40),
+            const Spacer(),
 
             Center(
               child: ElevatedButton(
@@ -66,7 +66,7 @@ class SecondScreen extends StatelessWidget {
                   backgroundColor: const Color(0xFF2B637B),
                   foregroundColor: Colors.white,
                   padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
+                    horizontal: 32,
                     vertical: 16,
                   ),
                   shape: RoundedRectangleBorder(

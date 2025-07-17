@@ -9,12 +9,12 @@ class UserProvider extends ChangeNotifier {
 
   void setName(String value) {
     _name = value;
-    notifyListeners(); // ⬅️ update UI yang pakai `name`
+    notifyListeners(); // update UI yang pakai `name`
   }
 
   void setSelectedUser(String value) {
     _selectedUser = value;
-    notifyListeners(); // ⬅️ update UI yang pakai `selectedUser`
+    notifyListeners(); // update UI yang pakai `selectedUser`
   }
 
   void reset() {

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:cached_network_image/cached_network_image.dart';
 import '../models/user.dart';
 
 class UserTile extends StatelessWidget {
@@ -10,13 +9,45 @@ class UserTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ListTile(
-      leading: CircleAvatar(
-        backgroundImage: CachedNetworkImageProvider(user.avatar),
-      ),
-      title: Text(user.fullName),
-      subtitle: Text(user.email),
+    return InkWell(
       onTap: onTap,
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+        child: Row(
+          children: [
+            // Avatar
+            CircleAvatar(
+              backgroundImage: NetworkImage(user.avatar),
+              radius: 30, // ukuran gambar (48x48)
+            ),
+            const SizedBox(width: 16),
+
+            // Nama & Email
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  user.fullName,
+                  style: const TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.w600, // semi-bold
+                    color: Colors.black,
+                  ),
+                ),
+                const SizedBox(height: 4),
+                Text(
+                  user.email,
+                  style: TextStyle(
+                    fontSize: 14,
+                    color: Colors.grey[600],
+                    letterSpacing: 0.5,
+                  ),
+                ),
+              ],
+            ),
+          ],
+        ),
+      ),
     );
   }
 }
