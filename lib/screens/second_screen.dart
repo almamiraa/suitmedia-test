@@ -28,15 +28,15 @@ class SecondScreen extends StatelessWidget {
           children: [
             const Text(
               'Welcome',
-              style: TextStyle(fontSize: 16, color: Colors.black),
+              style: TextStyle(fontSize: 20, color: Colors.black),
             ),
             const SizedBox(height: 4),
             Text(
               userProvider.name.isNotEmpty ? userProvider.name : 'User name',
-              style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+              style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const SizedBox(
-              height: 80,
+              height: 150,
             ), // Space between welcome and selected user
 
             Center(
@@ -46,7 +46,7 @@ class SecondScreen extends StatelessWidget {
                     : 'Selected User Name',
                 textAlign: TextAlign.center,
                 style: const TextStyle(
-                  fontSize: 22,
+                  fontSize: 24,
                   fontWeight: FontWeight.bold,
                 ),
               ),
@@ -55,25 +55,35 @@ class SecondScreen extends StatelessWidget {
             const Spacer(),
 
             Center(
-              child: ElevatedButton(
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (_) => const ThirdScreen()),
-                  );
-                },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFF2B637B),
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 32,
-                    vertical: 16,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
+              child: Padding(
+                padding: const EdgeInsets.only(
+                  left: 16.0,
+                  right: 16.0,
+                  bottom: 16.0,
+                ),
+                child: SizedBox(
+                  width: double.infinity,
+                  child: ElevatedButton(
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (_) => const ThirdScreen()),
+                      );
+                    },
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: const Color(0xFF2B637B),
+                      foregroundColor: Colors.white,
+                      padding: const EdgeInsets.symmetric(
+                        horizontal: 32,
+                        vertical: 16,
+                      ),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12),
+                      ),
+                    ),
+                    child: const Text('Choose a User'),
                   ),
                 ),
-                child: const Text('Choose a User'),
               ),
             ),
           ],

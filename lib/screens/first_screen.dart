@@ -94,7 +94,7 @@ class _FirstScreenState extends State<FirstScreen> {
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/background.png'),
-            fit: BoxFit.cover, // biar gambar penuh
+            fit: BoxFit.cover, // gambar penuh
           ),
         ),
         child: SafeArea(
@@ -105,16 +105,11 @@ class _FirstScreenState extends State<FirstScreen> {
               children: [
                 const CircleAvatar(
                   radius: 60,
-                  backgroundColor: Color.fromARGB(
-                    255,
-                    124,
-                    193,
-                    198,
-                  ), // Warna lingkaran
+                  backgroundColor: Color.fromARGB(255, 124, 193, 198),
                   child: Icon(
                     Icons.person_add_alt_1,
                     size: 50,
-                    color: Colors.white, // Warna ikon
+                    color: Colors.white,
                   ),
                 ),
 

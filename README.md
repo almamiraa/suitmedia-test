@@ -89,13 +89,13 @@ A simple Flutter application that demonstrates:
 git clone https://github.com/almamiraa/suitmedia-test.git
 ```
 
-### Install dependencies
+### 2. Install dependencies
 
 ```bash
 flutter pub get
 ```
 
-### Run the App
+### 3. Run the App
 
 ```bash
 flutter run
