@@ -1,16 +1,97 @@
-# palindrome_test
+# Suitmedia Testcase 2025 - Mobile App Developer
 
-A new Flutter project.
+| Nama | NRP        | University |
+| ---- | ---------- | ---------- |
+| Alma | 5027221054 | ITS        |
 
-## Getting Started
+A simple Flutter application that demonstrates:
 
-This project is a starting point for a Flutter application.
+- Palindrome checker
+- Welcome screen with username input
+- User selection from an API (ReqRes.in) with infinite scroll and pull-to-refresh
+- Clean UI based on Figma wireframes
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## ✨ Features
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. **Palindrome Checker Screen**
+
+   - User inputs a word.
+   - App checks whether it’s a palindrome.
+   - Shows a top notification if input is empty or result.
+
+2. **Welcome & Username Screen**
+
+   - User sees a welcome message.
+   - Enters their name.
+   - Cannot proceed without input (form validation).
+   - Background image used with styled layout.
+
+3. **User Selection Screen**
+   - Fetches user list from ReqRes API.
+   - Uses infinite scroll (`page`, `per_page` support).
+   - Pull-to-refresh functionality.
+   - Displays empty state if no users are returned.
+   - Clean layout with image, name, and email (based on design).
+
+---
+
+## 📸 Screenshots
+
+### Home Screen 📱
+
+![Home screen](/assets/readme/home.jpg)
+
+### Palindrome Checker ☑️
+
+<p align="center">
+  <img src="/assets/readme/input-pali.jpg" alt="Input Palindrome" width="30%" />
+  <img src="/assets/readme/cek-pali.jpg" alt="Cek Palindrome" width="30%" style="margin: 0 10px;" />
+  <img src="/assets/readme/warn1.jpg" alt="Warning" width="30%" />
+</p>
+
+### Welcome Screen 💻
+
+<p align="center">
+  <img src="/assets/readme/input-name.jpg" alt="Input name" width="30%" />
+  <img src="/assets/readme/second1.jpg" alt="Cek name" width="30%" style="margin: 0 10px;" />
+  <img src="/assets/readme/warn2.jpg" alt="Warning2" width="30%" />
+</p>
+
+### User List 👥
+
+![third screen](/assets/readme/third.jpg)
+![no users](/assets/readme/no-users.jpg)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** (State management using `Provider`)
+- **Dart**
+- `http` for API calls
+- `cached_network_image` for avatar caching
+- Custom UI widgets for modularity
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/almamiraa/suitmedia-test.git
+```
+
+### Install dependencies
+
+```bash
+flutter pub get
+```
+
+### Run the App
+
+```bash
+flutter run
+```
