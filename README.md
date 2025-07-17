@@ -15,25 +15,30 @@ A simple Flutter application that demonstrates:
 
 ## ✨ Features
 
-1. **Palindrome Checker Screen**
+1. **🔁 Home Screen (Palindrome Checker)**
 
    - User inputs a word.
    - App checks whether it’s a palindrome.
-   - Shows a top notification if input is empty or result.
+   - Displays a top notification if the input is empty or to show the result.
 
-2. **Welcome & Username Screen**
+2. **🏠 Home Screen (Username Input)**
 
-   - User sees a welcome message.
-   - Enters their name.
-   - Cannot proceed without input (form validation).
-   - Background image used with styled layout.
+   - User is prompted to enter their name upon opening the app.
+   - Cannot proceed without entering a name (input is validated).
+   - A pop-up alert appears if the input is empty when submitting.
+   - Once a name is entered, the user is navigated to the Welcome screen.
 
-3. **User Selection Screen**
+3. **👋 Welcome Screen**
+
+   - Displays a welcome message along with the user's name.
+   - Includes a button to proceed to the User Selection screen.
+
+4. **👤 User Selection Screen**
    - Fetches user list from ReqRes API.
    - Uses infinite scroll (`page`, `per_page` support).
    - Pull-to-refresh functionality.
    - Displays empty state if no users are returned.
-   - Clean layout with image, name, and email (based on design).
+   - Clean and minimal layout displaying user avatar, name, and email
 
 ---
 

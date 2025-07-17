@@ -18,7 +18,7 @@ class UserTile extends StatelessWidget {
             // Avatar
             CircleAvatar(
               backgroundImage: NetworkImage(user.avatar),
-              radius: 30, // ukuran gambar (48x48)
+              radius: 30,
             ),
             const SizedBox(width: 16),
 
