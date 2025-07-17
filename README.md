@@ -56,16 +56,10 @@ A simple Flutter application that demonstrates:
 ### Welcome Screen 💻
 
 <p align="center">
-  <img src="/assets/readme/input-name.jpg" alt="Input name" width="30%" />
-  <img src="/assets/readme/second1.jpg" alt="Cek name" width="30%" style="margin: 0 10px;" />
-  <img src="/assets/readme/warn2.jpg" alt="Warning2" width="30%" />
-</p>
-
-<p align="center">
-  <img src="/assets/readme/input-name.jpg" alt="Input name width="23%" style="margin:5px;" />
-  <img src="/assets/readme/second1.jpg" alt="Cek name" width="23%" style="margin:5px;" />
-  <img src="/assets/readme/second2.jpg" alt="result" width="23%" style="margin:5px;" />
-  <img src="/assets/readme/warn2.jpg" alt="Warning2" width="23%" style="margin:5px;" />
+  <img src="/assets/readme/input-name.jpg" alt="Input name" width="22%" style="margin:5px;" />
+  <img src="/assets/readme/second1.jpg" alt="Cek name" width="22%" style="margin:5px;" />
+  <img src="/assets/readme/second2.jpg" alt="Result" width="22%" style="margin:5px;" />
+  <img src="/assets/readme/warn2.jpg" alt="Warning" width="22%" style="margin:5px;" />
 </p>
 
 ### User List 👥
